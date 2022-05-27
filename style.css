@@ -1,0 +1,76 @@
+body{
+    background-color: #059862;
+}
+.container{
+    max-width: 900px;
+    
+    margin: auto;
+}
+.form-area{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 0px;
+}
+.form-unit-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.form-unit{
+    display: grid;
+    flex-direction: column;
+}
+#address{
+    display: grid;
+    grid-column: 1 /span 2;
+}
+.button-area{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+#submit-button{
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: rgba(05, 98, 62, 0.4);
+    opacity: 0.9;
+    border: transparent solid 2px;
+    transition: 0.3s ease-in;
+}
+#submit-button:hover{
+    transition: 0.3s ease-out;
+    background-color: rgba(05, 98, 62, 0.9);
+    cursor: pointer;
+}
+
+input,select,textarea{
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+input:focus,select:focus, textarea:focus{
+    outline-color: red;
+}
+#gender-border{
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+option{
+    padding: 20px;
+}
+
+@media (max-width: 460px) {
+    .form-unit-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #address{
+        display: grid;
+        grid-column: 1;
+    }

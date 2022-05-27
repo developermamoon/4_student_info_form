@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruff Project Practise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-area">
+            <h1>Students Information Form</h1>
+            <div class="form-unit-container">
+
+
+                <div class="form-unit">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="First Name">
+                </div>
+
+
+                <div class="form-unit">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" placeholder="Last Name">
+                </div>
+
+                <div class="form-unit">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-unit">
+                    <label for="nid">NID No</label>
+                    <input type="number" name="nid" id="nid" placeholder="NID number here">
+                </div>
+
+                <div class="form-unit" id="address">
+                    <label for="address">Address</label>
+                    <textarea name="" id="address" cols="30" rows="3"></textarea>
+                </div>
+
+
+                <div class="form-unit">
+                    <label for="department">Department</label>
+                    <select name="department" id="department">
+                        <option value="">Select Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="Civil">Civil</option>
+                        <option value="English">English</option>
+                        <option value="BBA">BBA</option>
+                        <option value="Economics">Economics</option>
+                    </select>
+                </div>
+
+                <div class="form-unit">
+                    <label for="fathername">Fathers Name</label>
+                    <input type="text" name="fathername" id="fathername" placeholder="Father's Name">
+                </div>
+
+                <div class="form-unit">
+                    <label for="mothername">Mothers Name</label>
+                    <input type="text" name="mothername" id="mothername" placeholder="Mother's Name">
+                </div>
+
+
+                <div class="form-unit">
+                    <label for="religion">Religion</label>
+                    <select name="religion" id="religion">
+                        <option value="">Select Religion</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Cristian">Cristian</option>
+                        <option value="Buddhism">Buddhism</option>
+                    </select>
+                </div>
+
+                <div class="form-unit">
+                    <label for="Gender">Gender</label>
+                    <div id="gender-border">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-unit">
+                    <label for="upload">Upload your picture Here</label>
+                    <input type="file" name="upload" id="upload">
+                </div>
+                
+
+            </div>
+
+            <div class="button-area">
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
